@@ -6,5 +6,5 @@ class spindler(battery):
         super().__init__(current_date,last_service_date)
 
     def battery_should_be_serviced (self):
-        service_date=self.last_service_date.replace(year=self.last_service_date.year + 2)
+        service_date=self.last_service_date.replace(year=self.last_service_date.year + 3)
         return self.check(service_date)
